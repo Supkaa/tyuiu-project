@@ -6,8 +6,90 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <style>
+        *, body {
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #companies {
+            height: 83px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 11px 0;
+        }
+
+        #second-part {
+            width: 975px;
+        }
+
+        #partners {
+            border: 4px solid #AEAEAE;
+            border-left: 0;
+            border-right: 0;
+        }
+        .my-slider {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
+<div id="second-part">
+    <div id="partners">
+        <!--        companies-->
+        <div id="companies">
+            <div><img src="assets/imgs/2135106%201.svg"></div>
+            <div><img src="assets/imgs/1636106091_1-papik-pro-p-logotip-lukoil-foto-1%201.svg"></div>
+            <div><img src="assets/imgs/1636087434_3-papik-pro-p-gazprom-logotip-foto-4%201.svg"></div>
+            <div><img src="assets/imgs/1636157933_7-papik-pro-p-sibur-logotip-foto-8%201.svg"></div>
+            <div><img src="assets/imgs/rusneft.svg"></div>
+            <div><img src="assets/imgs/schlumberger%201.svg"></div>
+        </div>
+        <!--        carusel-->
+        <div class="my-slider">
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+            <div><img src="assets/imgs/img_PVwUWX%20(1)%201.png"></div>
+        </div>
+    </div>
+    <div>
+        <!--        peculiarities-->
+        <div></div>
 
+        <div></div>
+    </div>
+</div>
+<script>
+    var slider = tns({
+        autoplay: true,
+        autoplayTimeout: 8000,
+        container: '.my-slider',
+        items: 1,
+        controls: false,
+        autoplayButton: false,
+        autoplayButtonOutput: false,
+        nav: false,
+        autoWidth: true,
+        responsive: {
+            640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 2
+            },
+            700: {
+                gutter: 30
+            },
+            900: {
+                items: 3
+            }
+        }
+    });
+</script>
 </body>
 </html>
