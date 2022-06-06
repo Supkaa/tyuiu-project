@@ -12,6 +12,7 @@
     <title>09.03.02 Информационные системы и технологии (ИСТНб) - ТИУ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <link rel="shortcut icon" href="/assets/faicon.png" type="image/x-icon">
     <style>
         *, body {
             margin: 0 auto;
@@ -129,12 +130,15 @@
                 </div>
                 <!--        carusel-->
                 <div class="my-slider" style="display: flex; max-height: min-content; height: 380px;">
-                    <img style="object-fit: fill;" src="assets/imgs/s1.png">
-                    <img style="object-fit: fill;" src="assets/imgs/s2.png">
-                    <img style="object-fit: fill;" src="assets/imgs/s3.jpeg">
-                    <img style="object-fit: fill;" src="assets/imgs/s4.jpeg">
-                    <img style="object-fit: fill;" src="assets/imgs/s5.jpeg">
-                    <img style="object-fit: fill;" src="assets/imgs/s6.jpeg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s3.jpeg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s4.jpeg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s7.jpg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s8.jpg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s11.jpg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s12.png">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s9.jpg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s10.jpg">
+                    <img class="sl_img" style="object-fit: fill;" src="assets/imgs/s13.jpg">
                 </div>
             </div>
             <div>
@@ -173,7 +177,7 @@
 <script>
     var slider = tns({
         autoplay: true,
-        autoplayTimeout: 8000,
+        autoplayTimeout: 5000,
         container: '.my-slider',
         items: 1,
         controls: false,
@@ -192,7 +196,7 @@
                 gutter: 30
             },
             900: {
-                items: 3
+                items: 12
             }
         }
     });

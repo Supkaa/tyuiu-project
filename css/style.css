@@ -107,6 +107,10 @@ body {
     width: 80%;
 }
 
+.bottom_menu {
+    margin-bottom: 50px;
+}
+
 .bottom_wrapper {
     display:flex;
     justify-content: space-between;
@@ -163,3 +167,11 @@ body {
 .bottom_item:hover {
     transform: scale(1.15);
 }
+
+.sl_img {
+    width: 600px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+/* https://github.com/ganlanyuan/tiny-slider */
